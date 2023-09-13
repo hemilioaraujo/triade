@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Goldman", sans-serif;
+}
+
+:root {
+  --color-primary: #faa300;
+  --color-secondary: #9b3d12;
+  --color-third: #5e747f;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+body {
+  background-color: var(--color-black);
+}
+
+.menu {
+  top: 70px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-menu {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+}
+
+.menu-icon {
+  width: 64px;
+  height: 64px;
+  stroke: var(--color-primary);
+  fill: var(--color-primary);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-primary);
+  text-shadow: 0px 3px 0px var(--color-secondary);
+  font-size: 2.3rem;
+  -webkit-text-stroke: 1px var(--color-black);
+}
+
+.main {
+  background-image: url(./assets/img/main-mobile.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.txt-white {
+  color: var(--color-white);
+}
+
+.txt-black {
+  color: var(--color-black);
+}
+
+.title {
+  color: var(--color-white);
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.styled-title {
+  color: var(--color-primary);
+  text-shadow: 0px 4px 0px var(--color-secondary);
+  font-size: 6rem;
+  -webkit-text-stroke: 1px var(--color-black);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bottom {
+  position: relative;
+  top: 80%;
+}
+
+.text-justified{
+    text-align: justify;
+}
+
+.container {
+  margin: 1rem 2rem;
+}
+
+.mt-1{
+    margin-top: 1rem;
+}
