@@ -76,8 +76,19 @@ body {
 .styled-title {
   color: var(--color-primary);
   text-shadow: 0px 4px 0px var(--color-secondary);
-  font-size: 6rem;
   -webkit-text-stroke: 1px var(--color-black);
+}
+
+.text-6 {
+  font-size: 6rem;
+}
+
+.text-4 {
+  font-size: 4rem;
+}
+
+.text-2 {
+  font-size: 2rem;
 }
 
 .text-center {
@@ -89,14 +100,53 @@ body {
   top: 80%;
 }
 
-.text-justified{
-    text-align: justify;
+.text-justified {
+  text-align: justify;
 }
 
 .container {
   margin: 1rem 2rem;
 }
 
-.mt-1{
-    margin-top: 1rem;
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  /* padding: 20px; */
+  position: relative;
+}
+
+.card-content {
+  position: absolute;
+  background-color: rgba(94, 116, 127, 0.5);
+  bottom: 0;
+  width: 100%;
+}
+
+.card-hemilio {
+  background-image: url(assets/img/hemilio.jpg); /* Replace 'your-image.jpg' with the path to your image */
+}
+
+.card-marco {
+  background-image: url(assets/img/marco.jpg); /* Replace 'your-image.jpg' with the path to your image */
+}
+
+.card-lucas {
+  background-image: url(assets/img/lucas.jpg); /* Replace 'your-image.jpg' with the path to your image */
+}
+
+.card svg {
+  width: 2rem;
+  height: 2rem;
 }
