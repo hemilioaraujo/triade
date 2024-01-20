@@ -29,3 +29,68 @@
   text-shadow: 0px 4px 0px theme("colors.secondary");
   -webkit-text-stroke: 1px theme("colors.black");
 }
+
+/* .carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+} */
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  /* display: block; */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.25rem;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 1ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  /* top: -50%; */
+  /* transform: translateY(-50%); */
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover {
+  color: red;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.prev {
+  left: 0rem;
+}
+
+.carousel-button.next {
+  right: 0rem;
+}
