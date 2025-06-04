@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 header {
@@ -68,18 +69,46 @@ header {
 .nav-menu a {
   text-decoration: none;
   font-size: 2rem;
-  font-weight: bold;
   margin-bottom: 1rem;
-  color: var(--color-primary);
-  -webkit-text-stroke: 1px var(--color-black);
-  text-shadow: 2px 2px 0px var(--color-secondary);
 }
 
 .nav-menu.active {
   display: flex;
 }
 
+.main {
+  background-image: url(./assets/img/main-mobile.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main h1 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+}
+
+.container {
+  margin: 1rem 2rem;
+}
+
+.text-styled {
+  font-weight: bold;
+  color: var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-black);
+  text-shadow: 2px 2px 0px var(--color-secondary);
+}
+
+
+
 @media (min-width: 768px) {
+  .header {
+    justify-content: flex-end;
+  }
+
   .menu-button {
     display: none;
   }
@@ -87,9 +116,8 @@ header {
   .nav-menu {
     display: flex !important;
     flex-direction: row;
+    justify-content: center;
     position: static;
-    width: auto;
-    box-shadow: none;
     background-color: transparent;
   }
 
@@ -101,7 +129,10 @@ header {
     display: none;
   }
 
-  .header {
-    justify-content: flex-end;
+  .main {
+    background-image: url(./assets/img/main-desktop.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
   }
 }

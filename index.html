@@ -9,21 +9,26 @@
   </head>
 
   <body>
-    <header>
-      <div class="menu-button" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <section class="main">
+      <header>
+        <div class="menu-button" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
 
-      <nav class="nav-menu" id="nav-menu">
-        <button class="close-button" onclick="toggleMenu()">X</button>
-        <a href="#">Sobre</a>
-        <a href="#">Integrantes</a>
-        <a href="#">Mídia</a>
-        <a href="#">Contato</a>
-      </nav>
-    </header>
+        <nav class="nav-menu" id="nav-menu">
+          <button class="close-button" onclick="toggleMenu()">X</button>
+          <a class="text-styled" href="#">Início</a>
+          <a class="text-styled" href="#about">Sobre</a>
+          <a class="text-styled" href="#">Integrantes</a>
+          <a class="text-styled" href="#">Mídia</a>
+          <a class="text-styled" href="#">Contato</a>
+        </nav>
+      </header>
+
+      <h1 class="text-styled">Tríade</h1>
+    </section>
 
     <script>
       function toggleMenu() {
