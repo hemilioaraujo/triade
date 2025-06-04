@@ -4,11 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
     <title>Banda Tríade</title>
   </head>
 
   <body>
-    <button class="btn-menu" id="btn-open">
+    <section class="main">
+      <header>
+        <div class="menu-button" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+          <button class="close-button" onclick="toggleMenu()">X</button>
+          <a class="text-styled" href="#">Início</a>
+          <a class="text-styled" href="#about">Sobre</a>
+          <a class="text-styled" href="#">Integrantes</a>
+          <a class="text-styled" href="#">Mídia</a>
+          <a class="text-styled" href="#">Contato</a>
+        </nav>
+      </header>
+
+      <h1 class="text-styled">Tríade</h1>
+    </section>
+
+    <section id="about" class="container">
+      <h1 class="title">Sobre</h1>
+      <article class="text-justified text-third">
+        <p>
+          A Tríade, uma banda de rock clássico, teve suas primeiras
+          apresentações em 2019, marcando sua estreia no prestigiado palco do
+          tradicional evento Rock in Rua naquele mesmo ano. Logo em seguida, a
+          banda conquistou o público no 2º Encontro de Motociclistas e
+          Triciclistas de Dores de Campos, onde suas reinterpretações de
+          clássicos do gênero foram calorosamente recebidas.
+        </p>
+        <p>
+          O notável entrosamento dos músicos, que já compartilhavam experiências
+          em outra banda desde 2016, adicionou um elemento de improvisação e
+          jamming às apresentações da Tríade, definindo sua característica
+          distintiva: a busca por ultrapassar os limites da música, explorando
+          novas dimensões além das versões originais que todos conhecemos.
+        </p>
+        <p>
+          Incialmente se apresentando como um trio, a formação da Tríade sempre
+          contou com Hemilio nos vocais e guitarra, Marco Aurélio no baixo e
+          Lucas na bateria. Com o tempo, a banda expandiu seu repertório,
+          mesclando influências do Classic Rock e do Rock Nacional em suas
+          reinterpretações. O ponto alto de seus shows reside nas versões de
+          músicas, sejam elas de gêneros afins ou não ao Rock 'n' Roll, que
+          surpreendem o público a cada execução, seja por meio de interpretações
+          magistrais, medleys habilmente elaborados ou versões que desafiam as
+          expectativas, tornando cada música uma experiência única para o
+          ouvinte.
+        </p>
+      </article>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
+
+    <!-- <button class="btn-menu" id="btn-open">
       <svg
         class="menu-icon"
         viewBox="0 0 24 24"
@@ -19,7 +80,7 @@
         <path d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
         <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round" />
       </svg>
-    </button>
+    </button> -->
     <!-- <header>
       <div>
       </div>
@@ -41,11 +102,11 @@
       </div>
     </header> -->
 
-    <section class="main">
+    <!-- <section class="main">
       <h1 class="styled-title text-center text-bottom text-6">Tríade</h1>
-    </section>
+    </section> -->
 
-    <section id="about">
+    <!-- <section id="about">
       <h1 class="title text-center">Sobre</h1>
       <article class="txt-white container text-third">
         <p class="text-justified">
@@ -76,9 +137,9 @@
           ouvinte.
         </p>
       </article>
-    </section>
+    </section> -->
 
-    <section id="integrantes">
+    <!-- <section id="integrantes">
       <h1 class="title text-center">Integrantes</h1>
       <div class="card card-hemilio">
         <div class="card-content">
@@ -388,7 +449,31 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- <section id="midia">
+      <h1 class="title text-center">Galeria</h1>
+
+      <div class="media-container">
+        <img src="assets/img/galery/triade (1).jpg" alt="" />
+        <img src="assets/img/galery/triade (2).jpg" alt="" />
+        <img src="assets/img/galery/triade (3).jpg" alt="" />
+        <img src="assets/img/galery/triade (4).jpg" alt="" />
+        <img src="assets/img/galery/triade (5).jpg" alt="" />
+        <img src="assets/img/galery/triade (6).jpg" alt="" />
+        <img src="assets/img/galery/triade (7).jpg" alt="" />
+        <img src="assets/img/galery/triade (8).jpg" alt="" />
+        <img src="assets/img/galery/triade (9).jpg" alt="" />
+        <img src="assets/img/galery/triade (10).jpg" alt="" />
+        <img src="assets/img/galery/triade (11).jpg" alt="" />
+        <img src="assets/img/galery/triade (12).jpg" alt="" />
+        <img src="assets/img/galery/triade (13).jpg" alt="" />
+        <img src="assets/img/galery/triade (14).jpg" alt="" />
+        <img src="assets/img/galery/triade (15).jpg" alt="" />
+      </div>
+    </section> -->
+
+    <!-- <section id="contato">
 
     <section class="">
       <h1 class="title text-center">Galeria</h1>
@@ -416,14 +501,15 @@
     </section>
     
     <section id="contato">
+
       <h1 class="title text-center">Contato</h1>
-    </section>
-    <section id="agenda">
+    </section> -->
+
+    <!-- <section id="agenda">
       <h1 class="title text-center">Agenda</h1>
-    </section>
+    </section> -->
 
     <script src="script.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
-  <!-- FEITO POR: LARISSA V. KICH  -->
 </html>
