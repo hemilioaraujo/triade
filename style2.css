@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Goldman", sans-serif;
+}
+
+:root {
+  --color-primary: #faa300;
+  --color-secondary: #9b3d12;
+  --color-third: #5e747f;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+body {
+  background-color: var(--color-black);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-button {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.menu-button div {
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-black);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: inherit;
+}
+
+.close-button {
+  margin: 16px;
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-black);
+  text-shadow: 2px 2px 0px var(--color-secondary);
+  margin-bottom: 16px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  -webkit-text-stroke: 1px var(--color-black);
+  text-shadow: 2px 2px 0px var(--color-secondary);
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .nav-menu a {
+    margin-left: 16px;
+  }
+
+  .nav-menu button {
+    display: none;
+  }
+
+  .header {
+    justify-content: flex-end;
+  }
+}

@@ -4,12 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
     <title>Banda Tríade</title>
   </head>
 
   <body>
-    <button class="btn-menu" id="btn-open">
+    <header>
+      <div class="menu-button" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
+        <button class="close-button" onclick="toggleMenu()">X</button>
+        <a href="#">Sobre</a>
+        <a href="#">Integrantes</a>
+        <a href="#">Mídia</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav-menu").classList.toggle("active");
+      }
+    </script>
+
+    <!-- <button class="btn-menu" id="btn-open">
       <svg
         class="menu-icon"
         viewBox="0 0 24 24"
@@ -20,7 +42,7 @@
         <path d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
         <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round" />
       </svg>
-    </button>
+    </button> -->
     <!-- <header>
       <div>
       </div>
@@ -42,11 +64,11 @@
       </div>
     </header> -->
 
-    <section class="main">
+    <!-- <section class="main">
       <h1 class="styled-title text-center text-bottom text-6">Tríade</h1>
-    </section>
+    </section> -->
 
-    <section id="about">
+    <!-- <section id="about">
       <h1 class="title text-center">Sobre</h1>
       <article class="txt-white container text-third">
         <p class="text-justified">
@@ -77,9 +99,9 @@
           ouvinte.
         </p>
       </article>
-    </section>
+    </section> -->
 
-    <section id="integrantes">
+    <!-- <section id="integrantes">
       <h1 class="title text-center">Integrantes</h1>
       <div class="card card-hemilio">
         <div class="card-content">
@@ -389,9 +411,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="midia">
+    <!-- <section id="midia">
       <h1 class="title text-center">Galeria</h1>
 
       <div class="media-container">
@@ -411,15 +433,16 @@
         <img src="assets/img/galery/triade (14).jpg" alt="" />
         <img src="assets/img/galery/triade (15).jpg" alt="" />
       </div>
-    </section>
-    <section id="contato">
+    </section> -->
+
+    <!-- <section id="contato">
       <h1 class="title text-center">Contato</h1>
-    </section>
-    <section id="agenda">
+    </section> -->
+
+    <!-- <section id="agenda">
       <h1 class="title text-center">Agenda</h1>
-    </section>
+    </section> -->
 
     <script src="script.js"></script>
   </body>
-  <!-- FEITO POR: LARISSA V. KICH  -->
 </html>
