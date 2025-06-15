@@ -78,6 +78,10 @@ header {
   margin-bottom: 1rem;
 }
 
+.nav-menu a:hover {
+  font-size: 2.5rem;
+}
+
 .nav-menu.active {
   display: flex;
 }
