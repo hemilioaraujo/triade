@@ -67,6 +67,11 @@ header {
   margin-bottom: 16px;
 }
 
+.nav-menu img {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+
 .nav-menu a {
   text-decoration: none;
   font-size: 2rem;
@@ -181,29 +186,9 @@ header {
   font-size: 1.8rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header {
     justify-content: flex-end;
-  }
-
-  .menu-button {
-    display: none;
-  }
-
-  .nav-menu {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    position: static;
-    background-color: transparent;
-  }
-
-  .nav-menu a {
-    margin-left: 16px;
-  }
-
-  .nav-menu button {
-    display: none;
   }
 
   .main {
@@ -211,6 +196,49 @@ header {
     background-size: cover;
     width: 100vw;
     height: 100vh;
+  }
+
+  /* MEMBERS */
+  .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .member-card {
+    width: 23vw;
+    position: relative;
+  }
+
+  .member-img {
+    width: 23vw;
+  }
+
+  .member-info {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(94, 116, 127, 0.5);
+  }
+
+  .member-info h2 {
+    font-size: 3rem;
+  }
+
+  .member-info p {
+    font-size: 2rem;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+  }
+
+  .social-media img {
+    width: 3rem;
   }
 
   .container {
